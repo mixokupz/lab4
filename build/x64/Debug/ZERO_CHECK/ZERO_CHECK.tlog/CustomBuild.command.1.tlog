@@ -1,0 +1,10 @@
+^C:\USERS\МИХАИЛ\DESKTOP\ООП\CSV\BUILD\CMAKEFILES\D2E5F083F27D0168B231757BD984D047\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Михаил/Desktop/ООП/csv -BC:/Users/Михаил/Desktop/ООП/csv/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Михаил/Desktop/ООП/csv/build/csv.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
